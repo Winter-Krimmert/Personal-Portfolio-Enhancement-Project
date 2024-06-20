@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .custom-header {
+      background-color: lightcoral;
+      padding: 20px;
+      text-align: center;
+    }
+    @media (min-width: 768px) {
+      .custom-header {
+        background-color: lightblue;
+      }
+    }
+    @media (min-width: 992px) {
+      .custom-header {
+        background-color: lightgreen;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="custom-header">
+      <h1>Responsive Header</h1>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-sm-6">
+        <div class="p-3 bg-primary text-white">Column 1</div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="p-3 bg-secondary text-white">Column 2</div>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <div class="p-3 bg-success text-white">Column 3</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

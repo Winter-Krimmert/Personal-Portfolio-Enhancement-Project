@@ -1,0 +1,207 @@
+/*CSS for Home Page*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inknut Antiqua', serif; /* Applies the font */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;;
+}
+
+header {
+    background-image: url('images/header_2.jpg');
+    background-size: cover;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Link styling for header */
+header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header a:active {
+    /* Styles for active state */
+    background-color: #777; /* Change background color when active */
+    color: #fff; /* Change text color when active */
+    border-radius: 5px;
+}
+
+
+.header-content h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+nav {
+    background-color: hsl(0, 0%, 20%);
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 10px 0;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+    vertical-align: middle;
+}
+
+/* Link styling */
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-menu a:hover {
+    background-color: #55555551; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+    border-radius: 5px; /* Optional: add rounded corners */
+}
+
+.nav-menu a:active {
+    /* Styles for active state */
+    background-color: #777; /* Change background color when active */
+    color: #fff; /* Change text color when active */
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.welcome-message {
+    width: 100%;
+    max-width: 800px;
+    margin: 10px 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 3s ease-in-out;
+  }
+.content-section {
+    width: 100%;
+    max-width: 800px;
+    margin: 10px 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+/* Main content styles About & Homepage */
+.content-section p {
+    text-indent: 30px; /* Adjust indent size as needed */
+    padding-bottom: 50px;;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+.footer-links {
+    display: flex;
+    justify-content: center; /* Center the links */
+    width: 75%;
+    margin-bottom: 10px;
+
+}
+.footer-section {
+    flex: 1;
+    text-align: center;
+}
+/*Link styling*/
+.footer-section a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px; /* Add padding to match the nav buttons */
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.footer-section a:hover {
+    background-color: #555; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+    border-radius: 5px; /* Optional: add rounded corners */
+}
+
+.footer-section a:active {
+    /* Styles for active state */
+    background-color: #777; /* Change background color when active */
+    color: #fff; /* Change text color when active */
+}
+
+
+/* Media query for screens smaller than 600px */
+@media (max-width: 600px) {
+    nav .nav-menu {
+        flex-direction: column;
+    }
+
+    nav .nav-menu li {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    main {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .content-section {
+        width: 100%;
+        margin: 10px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        width: 100%;
+        margin: 10px, 0;
+
+    }
+}
+
+

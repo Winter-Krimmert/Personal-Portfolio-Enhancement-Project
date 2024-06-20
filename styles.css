@@ -1,0 +1,94 @@
+/* Apply a background image to a specific div */
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/abstract.jpeg');
+    background-size: cover; /* Makes sure the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    z-index: -1; /* Places the background behind other content */
+}
+
+/* General body styles */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Inknut Antiqua', serif; /* Applies the font */
+    color: #ffff; /* Makes the text color white */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Styling for the heading */
+h1 {
+    position: absolute; /* Allows positioning relative to the body */
+    top: 10px; /* Adjust as needed for vertical positioning */
+    left: 40px; /* Adjust as needed for horizontal positioning */
+    margin: 0;
+    font-weight: 1000; /* Adjust the weight as needed */
+    font-size: 55px;
+    color: #ffffff; /* Text color */
+    z-index: 1; /* Ensures the heading is above the background */
+}
+
+/* Styling for the welcome message */
+.welcome-message {
+    position: absolute;
+    top: 50px; /* Allows positioning relative to the body */
+    left: 40px;
+    text-align: justify;
+    padding: 20px;
+    font-size:15px;
+    line-height: 1.8;
+
+    z-index: 1; /* Ensures the message is above the background */
+    color: white; /* Text color inside the welcome message box */
+    margin-top: 100px;
+}
+/* Styling for the profile image*/
+.profile-image img {
+    width: 150px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Makes the image round */
+    border: 1px solid #d3e3e4; /* Adds a white border */
+    position: absolute;
+    top: 50px; /* Adjust as needed for vertical positioning */
+    right: 40px; /* Adjust as needed for horizontal positioning */
+    z-index: 1; /* Ensures the image is above the background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow effect */    
+}
+/* Media query for mobile screens */
+@media screen and (max-width: 768px) {
+
+    h1 {
+        position: absolute; /* Allows positioning relative to the body */
+        top: 10px; /* Adjust as needed for vertical positioning */
+        left: 40px; /* Adjust as needed for horizontal positioning */
+        margin: 0;
+        font-weight: 1000; /* Adjust the weight as needed */
+        font-size: 55px;
+        color: #ffff; /* Text color */
+        z-index: 1; /* Ensures the heading is above the background */
+        line-height: 1.8;
+    }
+
+    body {
+        display: block;
+    }
+
+    .profile-image img {
+        width: 100px; /* Adjust size for mobile */
+        /* margin: left 1000px; */
+    }  
+
+    .welcome-message {
+        padding: 10px; /* Adjust padding for mobile */
+    }
+}
