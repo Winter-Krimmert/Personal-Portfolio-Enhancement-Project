@@ -43,10 +43,10 @@ To bring this portfolio to life, I've utilized:
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone 
+   git clone https://github.com/Winter-Krimmert/Personal-Portfolio-Enhancement-Project
 
 2. Navigate into the project directory:
-   cd 
+   cd weekend_project
    
 3. Open index.html in your web browser to experience my portfolio firsthand.
 
